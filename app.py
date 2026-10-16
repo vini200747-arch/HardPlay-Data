@@ -18,13 +18,10 @@ from azure.storage.blob import BlobServiceClient
 # ==========================================
 # CONFIGURAÇÃO DO AZURE STORAGE
 # ==========================================
-CONNECTION_STRING = (
-    "DefaultEndpointsProtocol=https;"
-    ""
-)
+CONNECTION_STRING = st.secrets["AZURE_STORAGE_CONNECTION_STRING"]
 CONTAINER_NAME = "bronze"
 CONTAINER_GOLD = "gold"
-FUSO = ZoneInfo("")
+FUSO = ZoneInfo("America/Sao_Paulo")
 
 # ==========================================
 # CONFIGURAÇÃO DOS IDs AUTOMÁTICOS
