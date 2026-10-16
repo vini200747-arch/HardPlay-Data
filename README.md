@@ -2,12 +2,13 @@
 
 ## Visão geral
 
-O Hardplay é um sistema de cadastros que grava clientes, fornecedores, produtos, trabalhadores e vendas no Azure e leva esses dados, sem intervenção manual, até um relatório no Power BI.
+O Hardplay é uma empresa ficticia criada para o Porjeto Integrador da unip. Uma vez que o trabalho proproe planejar a implemnetacao de computcao em nuvem e gestao de dados, decidi unir as duas materias e criar um projeto prático. A maior defasagem era o modo de registro e armazenamento dos dados, possuindop nenhuma padsronizacao e impedindo a implementracao da cultura do data-driven. Diante disso, criei um sistema de cadastros que grava clientes, fornecedores, produtos, trabalhadores e vendas no Azure e leva esses dados, sem intervenção manual, até um relatório no Power BI utilizando as seguintes ferramentas:
 
 - **Aplicação (Streamlit):** formulários em abas para cadastrar registros, mais uma tela de consulta.
 - **Armazenamento:** conta `deltalake07`, com os contêineres `bronze`, `silver` e `gold`.
 - **Processamento (Azure Data Factory):** um arquivo novo na Bronze dispara o pipeline da entidade, que atualiza a Silver e a Gold.
 - **Relatório (Power BI):** lê as tabelas da Gold.
+- **Claude IA
 
 ## Arquitetura
 
